@@ -1,6 +1,6 @@
 ---
-vm_name: WeighupAPI
-path: /WeighupAPI
+vm_name: love-project-api
+path: /love-project-api
 git_branch: master
 vm_os: ubuntu/trusty64
 environments:
@@ -17,12 +17,12 @@ packages:
   - imagemagick
   - qt5-default
   - libqt5webkit5-dev
-manual_ruby_version: 2.3.1
+manual_ruby_version: 2.3.3
 server_name: localhost
 rails_version: 4
 ruby_install: rvm
 ruby_version: 2.2.0
-environment_file: /WeighupAPI/.envrc
+environment_file: /love-project-api/.envrc
 databases:
   - postgresql
 background_jobs:
@@ -34,7 +34,7 @@ mongodb_db_name: myapp
 mysql_db_name: myapp
 mysql_db_user: vagrant
 mysql_db_password: 
-postgresql_db_name: WeighupAPI
+postgresql_db_name: love-project-api
 postgresql_db_user: vagrant
 postgresql_db_password: 
 postgresql_extensions:
