@@ -1,6 +1,6 @@
 ---
-vm_name: love-project-api
-path: /love-project-api
+vm_name: WeighupAPI
+path: /WeighupAPI
 git_branch: master
 vm_os: ubuntu/trusty64
 environments:
@@ -21,8 +21,8 @@ manual_ruby_version: 2.3.1
 server_name: localhost
 rails_version: 4
 ruby_install: rvm
-ruby_version: 2.2.1
-environment_file: /love-project-api/.envrc
+ruby_version: 2.2.0
+environment_file: /WeighupAPI/.envrc
 databases:
   - postgresql
 background_jobs:
@@ -34,16 +34,15 @@ mongodb_db_name: myapp
 mysql_db_name: myapp
 mysql_db_user: vagrant
 mysql_db_password: 
-postgresql_db_name: love-project-api
+postgresql_db_name: WeighupAPI
 postgresql_db_user: vagrant
 postgresql_db_password: 
 postgresql_extensions:
-  - hstore
 delayed_job_command: script/delayed_job run
 sidekiq_command: sidekiq
 resque_command: rake resque:work
 server_type: nginx_passenger
-git_url: 
+git_url: https://github.com/speakingcode/love-project-api
 
 app_name: '{{ vm_name }}'
 user_name: '{{ "vagrant" if target == "virtualbox" else app_name }}'
