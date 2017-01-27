@@ -1,0 +1,16 @@
+# Ansible managed
+
+default: &default
+  adapter: postgresql
+  pool: 5
+
+development:
+  <<: *default
+  database: love-project-api
+
+  username: vagrant
+  password: 
+
+test:
+  <<: *default
+  database: love-project-api_test
